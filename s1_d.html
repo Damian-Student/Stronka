@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Planety</title>
+    <link rel="stylesheet" href="s1.css">
+    <script src="s1.js"></script>
+    <link rel="icon" href="uni.ico" type="image/x-icon" />
+</head>
+<body>
+<section id="strona">
+    <header>
+        Naglowek
+    </header>
+    <nav class="top">
+        <ul>
+            <li><a class="menu" href="s1.html">Strona Główna</a><a class="menu" href="s1_g.html">Galeria</a><a class="menu" href="s1_o.html">O Nas</a><a class="menu active" href="s1_d.html">Dołącz do Nas</a></li>
+        </ul>
+    </nav>
+    <nav class="left">
+        <h1> Średnica równikowa: </h1>
+        <p>Merkury - 4 879 km</p>
+        <p>Wenus - 12 104 km</p>
+        <p>Ziemia - 12 756 km</p>
+        <p>Mars - 6 805 km</p>
+        <p>Jowisz - 142 984 km</p>
+        <p>Saturn - 120 536 km</p>
+        <p>Uran - 51 118 km</p>
+        <p>Neptun - 49 528 km</p>
+    </nav>
+    <article>
+        <h1>Kwestionariusz danych osobowych</h1>
+        <form action="#" method="get">
+            <fieldset name="dane_osobowe">
+                <p><i>Proszę wypełnić ten formularz. Obowiązkowe pola oznaczono znakiem </i><em>*</em></p>
+                <p></p>
+                <label>Imię <em>*</em></label><input type="text" name="f_imie"/><span class="err" id="e_imie"> </span> <br/>
+                <label>Nazwisko <em>*</em></label><input type="text" name="f_nazwisko"/> <br/>
+                <label>E-mail<em>*</em></label><input type="text" name="f_email"/> <br/>
+                <label>Kod pocztowy</label><input type="text" name="f_kod"/><br/>
+                <label>Ulica</label><input type="text" name="f_ulica"/> <br/>
+                <label>Miasto</label><input type="text" name="f_miasto"/><br/>
+                <label>Uwagi</label><textarea rows="5" cols="15" name="uwagi"></textarea> <br/></p>
+
+                <input type="submit" name="submit" value="Wyślij formularz" onclick="return validate(this.form);">
+
+                <input type="reset" name="reset" value="Wyczyść dane" onclick="return validate(this.form);">
+
+            </fieldset>
+        </form>
+    </article>
+    <aside> Informacja dodatkowe </aside>
+
+    <footer> Damian Monikowski</footer>
+</section>
+
+</body>
+</html>
